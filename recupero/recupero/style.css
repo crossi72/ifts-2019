@@ -1,0 +1,35 @@
+#titolo-importante{
+	color: #FF0;
+}
+
+.titolo-importante{
+	color: #F00;
+	text-align: center;
+}
+
+.blu{
+	color: #00F;
+}
+
+.grande{
+	font-size: 30px;
+}
+
+.piccola{
+	width: 300px;
+	text-align: center;
+}
+
+h1{
+	color: #0F0;
+}
+
+h1{
+	color: #0FF;
+}
+
+div{
+	border-style: solid;
+	border-color: #000;
+	border-width: 3px;
+}
