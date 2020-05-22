@@ -7,6 +7,11 @@
 	<link rel="stylesheet" href="style.css" type="text/css" media="all">
 </head>
 <body>
+	<div class="pulsanti">
+		<input type="button" value="titolo grande" id="titolo-grande">
+		<input type="button" value="titolo piccolo" id="titolo-piccolo">
+		<input type="button" value="titolo normale" id="titolo-normale">
+	</div>
 	<div>
 		<?php
 			stampa('primo titolo', 'titolo-importante', 'H');
@@ -24,9 +29,29 @@
 		?>
 	</div>
 	<div>
-		<img src="immagine.jpg" class="piccola">
+		<img src="immagine.jpg" class="piccola" id="img1">
+	</div>
+	<div>
+		<img src="immagine.jpg" class="piccola" id="img2">
+	</div>
+	<div>
+		<img src="immagine.jpg" class="piccola" id="img3">
+	</div>
+	<div>
+		<img src="immagine.jpg" class="piccola" id="img4">
+	</div>
+	<div>
+		<input type="button" value="immagini al centro" id="centra-immagini">
+		<input type="button" value="immagini a sinistra" id="sinistra-immagini">
+		<?php 
+			for ($i=1; $i <= 4; $i++){
+				echo '<input type="button" value="nascondi immagine '. $i .'" id="nascondi-'. $i .'">';
+				echo '<input type="button" value="mostra immagine '. $i .'" id="mostra-'. $i .'">';
+			}
+		?>
 	</div>
 </body>
+<script src="script.js"></script>
 </html>
 
 <?php
